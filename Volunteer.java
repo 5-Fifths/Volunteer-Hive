@@ -3,4 +3,7 @@ public class Volunteer {
     public void signUp(Event event) {
         
     }
+    public void cancelSignUp(Event event){
+
+    }
 }
