@@ -52,6 +52,10 @@ public void addVolunteer(Volunteer volunteer) {
         volunteerList.add(volunteer);
 }
 
+public void removeVolunteer(Volunteer volunteer) {
+    volunteerList.remove(volunteer);
+}
+
 // Output names in a list format
 public void volunteerListOut() {
     int n = volunteerList.size();
