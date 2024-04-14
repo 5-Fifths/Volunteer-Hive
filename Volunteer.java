@@ -38,11 +38,11 @@ public class Volunteer {
     }
 
     public void setEducationalLvl(String educationalLvl) {
-        educationalLevel = educationalLvl;
+        educationLevel = educationalLvl;
     }
 
     public String getEducationalLvl() {
-        return educationalLevel;
+        return educationLevel;
     }
 
     public void setMajor(String studentMajor) {
@@ -53,7 +53,7 @@ public class Volunteer {
         return major;
     }
 
-    public void setContactInfo(Stirng contact) {
+    public void setContactInfo(String contact) {
         contactInfo = contact;
     }
 
