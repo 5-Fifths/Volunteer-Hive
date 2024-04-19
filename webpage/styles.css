@@ -1,0 +1,34 @@
+:root {
+    --sac-state-green: #01563F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    border: 1px solid red;
+}
+
+nav {
+    height: 100vh;
+    width: 400px;
+    background-color: var(--sac-state-green);
+    
+    top: 0;
+    left: 0;
+    position: sticky;
+
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 18;
+    color: white;
+
+    border: 3px dashed pink;
+}
+
+#profile-picture {
+    height: 100px;
+    width: 100px;
+    
+}
