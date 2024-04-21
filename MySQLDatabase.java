@@ -9,7 +9,7 @@ public class MySQLDatabase {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			Connection con = DriverManager.getConnection(
-														      //Message for password
+									//Message for password
 			"jdbc:mysql://localhost:3306/volunteer_hive", "root", "password");
 			
 			// System.out.println("===================================");
