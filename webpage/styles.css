@@ -17,18 +17,64 @@ nav {
     
     top: 0;
     left: 0;
-    position: sticky;
+    position: fixed;
 
-    text-align: center;
     font-family: 'Inter';
-    font-size: 18;
+    font-size: 22.5;
     color: white;
+
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-image: url("../assets/sac-state-logo.png");
+    background-position-y: 350px;
+    background-blend-mode:hard-light;
+    
+
+
 
     border: 3px dashed pink;
 }
 
-#profile-picture {
-    height: 100px;
-    width: 100px;
+nav .profile-Picture{
+    margin: 10px 20% 1px;
+    position: relative;
+    border-radius: 50%;
     
+}
+
+nav .name{
+    margin-top: 50px;
+    text-align: center;
+}
+nav div{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+    text-indent: -9999999999999px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul .navigation li {
+    list-style-type: none;
+    font-size: 30;
+    margin-bottom: 20px;
+
+}
+
+main {
+    height: 100vh;
+    margin-left: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    width: 79%;
+    border: 3px dashed rgb(20, 144, 226);
+    font-size: 100px;
+
 }
