@@ -28,25 +28,35 @@
         </nav>
         <main>
             <header>Profile</header>
-            <div>a</div>
+            <div class="line">a</div>
             <section>Education Level: &emsp; Major: </br> Contact Information:  </section>
                
             <section>
                 <form action="" method="post">
                     <label for="aboutMe">About Me:</label>
                     </br>
-                    <textarea id="aboutMe" row="100" cols="100" placeholder="Enter your about me here."></textarea>
+                    <textarea class="aboutme" id="aboutMe" row="100" cols="100" placeholder="Enter your about me here."></textarea>
                     </br>
 
                     <label for="skills:">Skills:</label>
                     </br>
                     <input type="search" id="search-for-skills" placeholder="Search for skills.">
                     </br>
-                    
+                    <section class="skill-cards">
+                        <template>
+                            <div class ="scard">
+                                <div class="header"></div>
+                            </div>
+                        </template>
+                        <!-- delete later only used for example -->
+                        <div class ="scard">
+                            <div class="header">skill name</div>
+                        </div>
+                        </section>
 
                     
-                    <input class="buttons" type="submit" value="Save" >
-                    <input class="buttons" type="reset" value="Cancel">
+                    <input class="save" type="submit" value="Save" >
+                    <input class="cancel" type="reset" value="Cancel">
                 </form>
             </section>
             
