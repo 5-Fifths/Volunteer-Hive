@@ -124,9 +124,11 @@ main section{
 
 .event-cards {
     margin-left: 20px;
+    margin-right: 20px;
     display: grid;
     gap: .25rem;
     margin-top: 1rem;
+
 }
 
 .ecard {
@@ -134,7 +136,7 @@ main section{
     background-color: white;
     padding: .5rem;
 }
-.ecard > .body {
+.body {
     font-size: 25;
 }
 
@@ -174,3 +176,21 @@ main section{
     position: absolute;
 
 }
+
+.info {
+    margin-top: 20px;
+    background-color: red;
+    display: inline-block;
+    width: 439px;
+    margin-right: 20px;
+}
+
+.info img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ main a{
+    text-decoration: none;
+    color: black;
+ }
