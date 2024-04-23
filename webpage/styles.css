@@ -1,216 +1,152 @@
-:root {
-    --sac-state-green: #01563F;
+@media screen and (max-width: 500px) {
+    form {
+        float: none;
+        width: 100%;
+    }
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    border: 1px solid red;
-}
-
-nav {
-    height: 100vh;
-    width: 400px;
-    background-color: var(--sac-state-green);
-    
-    top: 0;
-    left: 0;
-    position: fixed;
-
-    font-family: 'Inter';
-    font-size: 22.5;
-    color: white;
-
-    background-size: 90%;
-    background-repeat: no-repeat;
-    background-image: url("../assets/sac-state-logo.png");
-    background-position-y: 350px;
-    background-blend-mode:hard-light;
-    
-
-
-
-    border: 3px dashed pink;
-}
-
-nav .profile-Picture{
-    margin: 10px 20% 1px;
-    position: relative;
-    border-radius: 50%;
-    
-}
-
-.name{
-    margin-top: 50px;
-    text-align: center;
-}
-nav div{
-    width: 80%;
-    height: 2px;
-    background-color: white;
-    text-indent: -9999999999999px;
-    border-radius: 10px;
-    margin-left: 10%;
-    margin-top: 10px;
-}
-nav a{
-    color: white;
+a {
     text-decoration: none;
 }
 
-.navigation li {
-    list-style-type: none;
-    font-size: 30;
-    margin-bottom: 20px;
-
-}
-
-main {
-    margin-top: 30px;
-    height: 95%;
-    margin-left: 430px;
-    margin-right: 20px;
-   
-    box-sizing: border-box;
-
-    border: 3px dashed rgb(20, 144, 226);
-    font-size: 35px;
-    background-color: rgb(223, 222, 222);
-
-}
-
-main header{
-    margin-left: 20px;
-}
-
-.line {
-    
-    width: 95%;
-    height: 2px;
-    background-color: rgb(124, 124, 124);
-    text-indent: -9999999999999px;
-    border-radius: 10px;
-    border: none;
-}
-
-main section{
-    /* background-color: red; */
-    margin-left: 20px;
-    margin-top: 30px;
-    tab-size: 4;
-}
-
-.save {
-    margin-right: 20px;
-    padding: 10px 60px;
-    background-color:var(--sac-state-green);
-    float: right;
-    color: white;
-
-}
-
-.cancel {
-    margin-right: 20px;
-    padding: 10px 60px;
-    background-color:grey;
-    float:right;
-    color: white;
-}
-
-.aboutme {
-   margin-bottom: 10%;
-}
-
-.event-cards {
-    margin-left: 20px;
-    margin-right: 20px;
-    display: grid;
-    gap: .25rem;
-    margin-top: 1rem;
-
-}
-
-.ecard {
-    border: 1px solid black;
+form {
+    border: 10px solid white;
+    margin: 50px 350px 50px 350px;
+    padding: 10px 30px 10px 30px;
     background-color: white;
-    padding: .5rem;
-}
-.body {
-    font-size: 25;
+    border-radius: 15px;
 }
 
-.ecard > div img {
-    border-radius: 20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 0 50px 0;
+    padding: 0px 120px 0px 120px;
+    height: 100%;
+    background-image: url("https://localwiki.org/media/cache/d8/4c/d84c349297afd100089349892401f5da.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.skill-cards{
-    margin-right: 20px;
-    margin-left: 0px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
-    gap: .25rem;
-    background-color: red;
+label{
+    color: black;
 }
 
-.scard {
-    border: 1px solid black;
-    background-color: var(--sac-state-green);
-    padding: .5rem;
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-    font-size: 20px;
-}
-
-.searchbar-events{
-    border-radius: 20px;
-    position: relative;
-    padding: 25;
-}
-
-.search-img {
-    filter: brightness(0.25);
-    margin-top: 16px;
-    margin-left: -395px;
-    position: absolute;
-
-}
-
-.info {
-    margin-top: 20px;
-    background-color: red;
-    display: inline-block;
-    width: 31%;
-    margin-right: 20px;
-}
-
-.info img{
+img {
+    width: 200px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
- main a{
-    text-decoration: none;
-    color: black;
- }
 
- .event-info {
+#username {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
     display: inline-block;
-    width: 31%;
-    
-}
-.event-header{
-    margin-left: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
 
-.event-description {
-    border: 1px solid black;
-    background-color: white;
-    padding: .5rem;
-    height: 65%;
-    margin-right: 20px;
-
- 
+#password {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
 }
+
+#first-name{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#last-name{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+::placeholder {
+    font-size: medium;
+    padding-top: 1px;
+}
+
+h1 {
+    text-align: center;
+    color: green;
+}
+
+#title {
+    text-align: center;
+    color: black;
+}
+
+button {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 25px;
+    display: inline-block;
+    background-color: green;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+#sign-acc{
+    font-size: 15px;
+    float: right;
+}
+
+
+label {
+    float: left;
+    font-size: 15px;
+}
+
+span {
+    float: right;
+    font-size: 15px;
+}
+
+#reg{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+#sign-up{
+    color: white;
+}
+
+#sign-in{
+    color: white;
+}
+
+
+
+
+

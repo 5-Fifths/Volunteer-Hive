@@ -1,0 +1,274 @@
+.side-bar{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color: #01563F;
+  }
+  
+  .profile-pic {
+      width: 100px;
+      height: 100px;
+      background-color: #ccc;
+      border-radius: 50%;
+      margin: 50px auto 20px 75px;
+      opacity: 1;
+  }
+  
+  .icon-container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .icon-container > p {
+      text-align: left;
+      margin-top: -18px;
+      margin-left: 70px;
+  }
+  
+  .home-icon{
+      width: 20px;
+      height: 15px;
+      margin: 16px 0px 0px 36px;
+      float: left;
+  }
+  
+  .search-icon {
+      width: 30px;
+      height: 30px;
+      margin: 17px 0px 0px 30px;
+      float: left;
+  
+  }
+  
+  .calendar-icon {
+      width: 20px;
+      height: 20px;
+      margin: 17px 0px 0px 36px;
+      float: left;
+  
+  }
+  
+  .inbox-icon {
+      width: 20px;
+      height: 20px;
+      margin: 17px 0px 0px 36px;
+      float: left;
+  
+  }
+  
+  
+  .profile-icon {
+      width: 20px;
+      height: 20px;
+      margin: 17px 0px 0px 36px;
+      float: left;
+  
+  }
+  
+  p {
+      color: white;
+      text-align: center;
+  }
+  
+  a {
+      color: white;
+  }
+  
+  hr.solid{
+      border-top: 2px solid white;
+      width: 180px;
+  }
+  
+  #se-events{
+      margin-left: 70px;
+      margin-top: -25px;
+  }
+  
+  p > a {
+      text-decoration: none;
+  }
+  
+  .upcoming-event {
+      height: 250px;
+      width: 1100px;
+      background-color: #f8f8f8;
+      position: absolute;
+      top: 4%;
+      left: 115%;
+  }
+  
+  .upcoming-event > h1 {
+      color: black;
+      text-align: left;
+      font-size: x-large;
+      margin-left: 10px;
+  }
+  
+  .upcoming-event > h4 {
+      color: black;
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 10px;
+  }
+  
+  hr.u-event {
+      border-top: 3px solid black;
+      width: 95%;
+  }
+  
+  #coord-profile {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -6%;
+      top: 19%;
+      position: absolute;
+  }
+  
+  #coord-name {
+      color: black;
+      text-align: left;
+      margin-left: 40px;
+      margin-top: -12px;
+  }
+  
+  .upcoming-event > .event-inv {
+      color: black;
+      text-align: left;
+      margin-left: 12px;
+      margin-top: 14px;
+  
+  }
+  
+  .my-events {
+      height: 450px;
+      width: 320px;
+      background-color: #f8f8f8;
+      position: absolute;
+      bottom: 5%;
+      left: 115%;
+      border-radius: 7%;
+  }
+  
+  .my-events > h1 {
+      color: black;
+      text-align: left;
+      font-size: x-large;
+      margin-left: 10px;
+  }
+  
+  .my-events > h4 {
+      color: black;
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 16px;
+      margin-bottom: 5px;
+  }
+  
+  hr.my-event {
+      border-top: 1.5px solid black;
+      width: 85%;
+      margin-bottom: 20px;
+  }
+  
+  #h41 {
+      margin-bottom: 20px;
+  }
+  
+  .date-time {
+      color: black;
+      text-align: right;
+      margin-top: -35px;
+      margin-right: 10px;
+      margin-bottom: 50px;
+  }
+  
+  #coord-profile1 {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -20%;
+      top: 15%;
+      position: absolute;
+  }
+  
+  #coord-profile2 {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -20%;
+      top: 38%;
+      position: absolute;
+  }
+  
+  #coord-profile3 {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -20%;
+      top: 61%;
+      position: absolute;
+  }
+  
+  .event-invitations {
+      height: 450px;
+      width: 320px;
+      background-color: #f8f8f8;
+      position: absolute;
+      bottom: 5%;
+      left: 260%;
+      border-radius: 7%;
+  }
+  
+  .event-invitations > h1 {
+      color: black;
+      text-align: left;
+      font-size: x-large;
+      margin-left: 10px;
+  }
+  
+  .event-invitations > h4 {
+      color: black;
+      text-align: left;
+      margin-left: 10px;
+      margin-top: 15px;
+      margin-bottom: 5px;
+  }
+  
+  hr.event-invitation {
+      border-top: 1.5px solid black;
+      width: 85%;
+      margin-bottom: 20px;
+  }
+  
+  .lassen-hall{
+      display: block;
+      height: 450px;
+      width: 335px;
+      position: absolute;
+      bottom: 5%;
+      left: 405%;
+      border-radius: 7%;
+  
+  } 
+  
+  .lassen-p{
+      
+      position: absolute;
+      top: 45%;
+      bottom: 5%;
+      left: 450%;
+      text-align: left;
+  
+  }
+  
+  
+  
