@@ -4,39 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <title>Volunteer Hive</title>
     </head>
 
     <body>
+      <!--
+      <nav>
+        <img class = "profile-Picture" src="../assets/blank-profile-picture.png" alt="Profile Picture">
+        <section class = "name">
+            Total hours: </br>
+            <a href="service-history.html"><u>Service History</u></a>
+        </section>
+            <div>a</div>
+        <ul>
+            <section class = "navigation">
+                <li><a href="dashboard.html"><img src="../assets/Home Icon.png" alt="Dashboard Icon" style="width: 20px;height: 20px;"> Dashboard</a> </li>
+                <li><a href="search-for-events.html"><img src="../assets/Search Icon.png" alt="Search for Events Icon" style="width: 20px;height: 20px;"> Search for Events</a> </li>
+                <li><a href="calendar.html"><img src="../assets/Calendar Icon.png" alt="Calendar Icon" style="width: 20px;height: 20px;"> Calendar</a> </li>
+                <li><a href="inbox.html"><img src="../assets/Inbox Icon.png" alt="Inbox Icon" style="width: 20px;height: 20px;"> Inbox</a> </li>
+                <li><a href="profile.html"><img src="../assets/Profile Icon.png" alt="Profile Icon" style="width: 20px;height: 20px;"> Profile</a> </li>
+            </section>
+        </ul>
+    </nav>
+    -->
         <main id="main-doc">
+          
            <div class="side-bar">
-            <img class="profile-pic" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png">
+            <img class="profile-pic" src="../assets/blank-profile-picture.png">
             <p></p>
             <p>Total Hours: </p>
-            <p><a href="Serivce History.html">Service History</a></p>
+            <p><a href="service-history.html"><u>Service History</u></a></p>
             <hr class="solid">
             <div class="icon-container">
 
-              <img class="home-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/home-page-white-icon.png"> <p><a href="Dashboard.html">Dashboard</a></p>
-              <img class="search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png"> <p id="se-events"><a href="SearchForEvents.html">Search for Events</a></p>
-              <img class="calendar-icon" src="Downloads/icons8-calendar-50.png"> <p><a href="Calendar.html">Calendar</a></p>
-              <img class="inbox-icon" src="Downloads/icons8-inbox-50.png"> <p><a href="Inbox.html">Inbox</a></p>
-              <img class="profile-icon" src="Downloads/toppng.com-rsg-portfolio-portfolio-for-robert-s-facebook-profile-icon-1275x1136.png"> <p><a href="Profile.html">Profile</a></p>
+              <img class="home-icon" src="../assets/Home Icon.png"> <p><a href="dashboard.html">Dashboard</a></p>
+              <img class="search-icon" src="../assets/Search Icon.png"> <p id="se-events"><a href="search-for-events.html">Search for Events</a></p>
+              <img class="calendar-icon" src="../assets/Calendar Icon.png"> <p><a href="calendar.html">Calendar</a></p>
+              <img class="inbox-icon" src="../assets/Inbox Icon.png"> <p><a href="inbox.html">Inbox</a></p>
+              <img class="profile-icon" src="../assets/Profile Icon.png"> <p><a href="profile.html">Profile</a></p>
 
           </div> 
 
-          <div class="upcoming-event">
+          <div class="upcoming-event"><a href="event.html">
             <h1>Upcoming Events</h1>
             <hr class="u-event">
             <h4>ECS Dpt. Career Fair</h4>
-            <img class="profile-pic" id="coord-profile" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"> <p id="coord-name">Dpt. Chair</p>
+            <img class="profile-pic" id="coord-profile" src="../assets/blank-profile-picture.png"> <p id="coord-name">Dpt. Chair</p>
             <p class="event-inv">Dear Students, we invite you to join us at our upcoming Computer Science Symposium, 
               a dynamic gathering designed to ignite your passion for technology and innovation. Immerse yourself in a day filled with 
               captivating talks, engaging workshops, and insightful discussions led by industry experts and esteemed academics. Explore the latest trends and advancements in artificial intelligence, cybersecurity, data science, and more, 
               gaining invaluable knowledge and practical skills that will empower you in your academic and professional pursuits.Don't miss this opportunity to network with industry leaders, learn from the best, and chart a course towards a successful and fulfilling career in Computer Science. 
               See you there!</p>
               
-          </div>
+              </a></div>
 
          <div class="my-events">
             <h1>My Events</h1>
@@ -44,17 +67,17 @@
 
             <h4>ECS Dpt. Career Fair</h4>
             <hr class="my-event">
-            <img class="profile-pic" id="coord-profile1" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"> <p id="coord-name">Dpt. Chair</p>
+            <img class="profile-pic" id="coord-profile1" src="../assets/blank-profile-picture.png"> <p id="coord-name">Dpt. Chair</p>
             <p class="date-time">12:00pm, 3/25</p>
 
             <h4>IT Dept.</h4>
             <hr class="my-event">
-            <img class="profile-pic" id="coord-profile2" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"> <p id="coord-name">IT. Dept</p>
+            <img class="profile-pic" id="coord-profile2" src="../assets/blank-profile-picture.png"> <p id="coord-name">IT. Dept</p>
             <p class="date-time">1:00pm, 3/26</p>
 
             <h4>All About Crypto</h4>
             <hr class="my-event">
-            <img class="profile-pic" id="coord-profile3" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"> <p id="coord-name">Crypto</p>
+            <img class="profile-pic" id="coord-profile3" src="../assets/blank-profile-picture.png"> <p id="coord-name">Crypto</p>
             <p class="date-time">9:00am, 3/28</p>
 
           </div>
@@ -65,13 +88,13 @@
 
             <h4>Walgreens</h4>
             <hr class="event-invitation">
-            <img class="profile-pic" id="coord-profile1" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"> <p id="coord-name">Walgreens Pharmacist</p>
+            <img class="profile-pic" id="coord-profile1" src="../assets/blank-profile-picture.png"> <p id="coord-name">Walgreens Pharmacist</p>
             <p class="date-time">12:00pm, 3/25</p>
           </div>
 
           <div class="lassen">
           
-            <img class="lassen-hall" src="Downloads/lassen-hall.jpeg"> 
+            <img class="lassen-hall" src="../assets/lassen-hall.jpeg"> 
              
           </div>
 
