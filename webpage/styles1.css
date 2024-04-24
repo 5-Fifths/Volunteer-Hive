@@ -352,3 +352,101 @@
       width: 40%;
       height: 5%;
   }
+  
+  #inbox {
+      width: 1100px;
+      height: 780px;
+      background-color: #f8f8f8;
+      position: absolute;
+      top: 2%;
+      left: 115%;
+      border-radius: 4%;
+  }
+  
+  #inbox-line {
+      border-top: 1.5px solid black;
+      width: 95%;
+      margin-bottom: 20px;
+  }
+  
+  #inbox > h2 {
+      margin-left: 20px;
+      margin-bottom: 10px;
+  }
+  
+  
+  #notif-date {
+      margin-top: -35px;
+      margin-left: 1000px;
+  }
+  
+  #event-inbox > p {
+      color: black;
+  }
+  
+  #event-inbox {
+      margin-left: 30px;
+      margin-right: 30px;
+  }
+  
+  #event-inbox > h3 > a {
+      color: black;
+  }
+  
+  #inbox-line2 {
+      border-top: 1.5px solid black;
+      width: 100%;
+      margin-bottom: 5px;
+  }
+  
+  
+  #coord-profile4 {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -4%;
+      top: 9%;
+      position: absolute;
+  }
+  
+  #coord-profile5 {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -4%;
+      top: 27%;
+      position: absolute;
+  }
+  
+  #coord-profile6 {
+      width: 25px;
+      height: 25px;
+      background-color: #ccc;
+      border-radius: 50%;
+      opacity: 1;
+      left: -4%;
+      top: 44.8%;
+      position: absolute;
+  }
+  
+  .coordinator {
+      text-align: left;
+      margin-top: 9px;
+      margin-left: 30px;
+      margin-bottom: 20px;
+  }
+  
+  .notif-description {
+      text-align: left;
+      margin-top: 15px;
+      margin-left: 30px;
+      margin-bottom: 40px;
+  }
+  
+  #notif-date > a {
+      color: black;
+  }
