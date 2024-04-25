@@ -1,66 +1,78 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
+<!--Volunteer Hive-->
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        <title>Voltuneer Hive</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Volunteer Hive</title>
     </head>
+
     <body>
-        <nav>
-            <img class = "profile-Picture" src="../assets/blank-profile-picture.png" alt="Profile Picture">
-            <section class = "name">
-                Total hours: </br>
-                <a href="service-history.html"><u>Service History</u></a>
-            </section>
-                <div>a</div>
-            <ul>
-                <section class = "navigation">
-                    <li><a href="dashboard.html"><img src="../assets/Home Icon.png" alt="Dashboard Icon" style="width: 20px;height: 20px;"> Dashboard</a> </li>
-                    <li><a href="search-for-events.html"><img src="../assets/Search Icon.png" alt="Search for Events Icon" style="width: 20px;height: 20px;"> Search for Events</a> </li>
-                    <li><a href="calendar.html"><img src="../assets/Calendar Icon.png" alt="Calendar Icon" style="width: 20px;height: 20px;"> Calendar</a> </li>
-                    <li><a href="inbox.html"><img src="../assets/Inbox Icon.png" alt="Inbox Icon" style="width: 20px;height: 20px;"> Inbox</a> </li>
-                    <li><a href="profile.html"><img src="../assets/Profile Icon.png" alt="Profile Icon" style="width: 20px;height: 20px;"> Profile</a> </li>
-                </section>
-            </ul>
-            
-        </nav>
-        <main>
-            <header>Profile</header>
-            <div class="line">a</div>
-            <section>Education Level: &emsp; Major: </br> Contact Information:  </section>
-               
-            <section>
-                <form action="" method="post">
-                    <label for="aboutMe">About Me:</label>
-                    </br>
-                    <textarea class="aboutme" id="aboutMe" row="100" cols="100" placeholder="Enter your about me here."></textarea>
-                    </br>
+        <main id="main-doc">
 
-                    <label for="skills:">Skills:</label>
-                    </br>
-                    <input type="search" id="search-for-skills" placeholder="Search for skills.">
-                    </br>
-                    <section class="skill-cards">
-                        <template>
-                            <div class ="scard">
-                                <div class="header"></div>
-                            </div>
-                        </template>
-                        <!-- delete later only used for example -->
-                        <div class ="scard">
-                            <div class="header">skill name</div>
-                        </div>
-                        </section>
-
-                    
-                    <input class="save" type="submit" value="Save" >
-                    <input class="cancel" type="reset" value="Cancel">
-                </form>
-            </section>
+            <div class="side-bar">
+                <img class="profile-pic" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png">
+                <p></p>
+                <p>Total Hours: </p>
+                <p><a href="Serivce History.html">Service History</a></p>
+                <hr class="solid">
+                <div class="icon-container">
+    
+                  <img class="home-icon" src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/home-page-white-icon.png"> <p><a href="Dashboard.html">Dashboard</a></p>
+                  <img class="search-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/VisualEditor_-_Icon_-_Search-big_-_white.svg/1200px-VisualEditor_-_Icon_-_Search-big_-_white.svg.png"> <p id="se-events"><a href="SearchForEvents.html">Search for Events</a></p>
+                  <img class="calendar-icon" src="Downloads/icons8-calendar-50.png"> <p><a href="Calendar.html">Calendar</a></p>
+                  <img class="inbox-icon" src="Downloads/icons8-inbox-50.png"> <p><a href="Inbox.html">Inbox</a></p>
+                  <img class="profile-icon" src="Downloads/toppng.com-rsg-portfolio-portfolio-for-robert-s-facebook-profile-icon-1275x1136.png"> <p><a href="Profile.html">Profile</a></p>
+    
+              </div> 
             
+        <div id="profile-box">
+
+            <h2 id="profile">Name Public Profile</h2>
+            <hr id="profile-line">
+
+            <h3 class="second-text">Education Level:</h3>
+
+            <textarea id="educ-level" name="educ-level" rows="2" cols="30" placeholder="Enter level"></textarea>
+
+            <div id="major-level">
+            <h3 class="second-text" id="major">Major:</h3> 
+             </div>
+
+            <div id="text-major">
+            <textarea id="major-prof" name="major-prof" rows="2" cols="30" placeholder="Enter major"></textarea>
+             </div>
+       
+
+
+            <h3 class="second-text"  id="contact">Contact Information:</h3>
+
+            <textarea id="contacts" name="contacts" rows="3" cols="60" placeholder="Enter contact info"></textarea>
+
+
+            <h3 class="second-text" id="me">About Me:</h3>
+
+            <textarea id="about-me" name="about-me" rows="10" cols="120" placeholder="Enter more about you..."></textarea>
+
+            <h3 class="second-text" id="skill-prof">Skills</h3>
+
+            <textarea id="skill" name="skill" rows="10" cols="120" placeholder="skill placeholder/unfinished"></textarea>
+
+        </div>
+
+<button type="submit" id="save">Save</button>
+
+</div>
+
+
 
         </main>
+
     </body>
-</html>
+
+
+
+
+   

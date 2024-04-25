@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --sac-state-green: #01563F;
+}
+a{
+    text-decoration: none;
+}
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter';
+    font-size: 22.5;
+    border-style: solid;
+    
+
+  }
+
+.side-bar{
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    background-color: #01563F;
+    background-color: var(--sac-state-green);
+    background-image: url("../assets/sac-state-logo.png");
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+    background-position: center;
+    color: white;
+    margin-left: 0;
+    padding: 0%;
+    left: 0;
+
+  }
+.profile-Picture{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 50px auto 20px 75px;
+    
+}
+
+.name{
+    text-align: center;
+}
+nav a{
+    color: white;
+}
+
+hr.solid{
+    border-top: 2px solid white;
+    width: 180px;
+}
+
+.side-bar-links {
+    display: flex;
+    align-items: center;
+    
+  }
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.side-bar li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+main {
+    position: fixed;
+    height: 99.9%;
+    width:87%;
+    margin-left: 13%;
+    left: 0;
+    display: grid;
+    grid-template-rows: repeat(5, minmax(150px, 1fr));
+    grid-template-columns: repeat(6, minmax(150px, 1fr)) ;
+    gap: 1rem;
+    padding: 1rem;
+    
+
+    
+  }
+
+  .upcoming-event-containe {
+
+  }
+  .upcoming-event > h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.upcoming-event > h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+hr.u-event {
+    border-top: 3px solid black;
+    width: 95%;
+}
+
+#coord-profile {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: 1.5%;
+    top: 12%;
+    position: absolute;
+}
+
+#coord-name {
+    color: black;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -12px;
+}
+
+.upcoming-event > .event-inv {
+    color: black;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 14px;
+
+}
+
+
+.my-events > h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.my-events > h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+hr.my-event {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+#h41 {
+    margin-bottom: 20px;
+}
+
+.date-time {
+    color: black;
+    text-align: right;
+    margin-top: -35px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#coord-profile1 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -20%;
+    top: 15%;
+    position: absolute;
+}
+
+#coord-profile2 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -20%;
+    top: 38%;
+    position: absolute;
+}
+
+#coord-profile3 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -20%;
+    top: 61%;
+    position: absolute;
+}
+
+
+.event-invitations > h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.event-invitations > h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+hr.event-invitation {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+
+.lassen-p{
+    
+    position: absolute;
+    top: 45%;
+    bottom: 5%;
+    left: 450%;
+    text-align: left;
+
+}
+  .upcoming-event {
+    grid-row: 1 / 3;
+    grid-column: 1 / 7;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border:  solid black;
+  }
+
+  .my-events {
+    grid-row: 3/ 6;
+    grid-column: 1 / 3;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.event-invitations {
+    grid-row: 3/ 6;
+    grid-column: 3 / 5;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.lassen-hall{
+    grid-row: 3/ 6;
+    grid-column: 5 / 7;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    height: 200%;
+
+
+    border:  solid black;
+} 
