@@ -14,8 +14,6 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Inter';
-    font-size: 22.5;
-    border-style: solid;
     
 
   }
@@ -24,28 +22,55 @@ body {
     height: 100%;
     width: 13%;
     position: fixed;
-    background-color: #01563F;
     background-color: var(--sac-state-green);
     background-image: url("../assets/sac-state-logo.png");
     background-repeat: no-repeat;
     background-blend-mode:hard-light;
     background-position: center;
     color: white;
-    margin-left: 0;
-    padding: 0%;
-    left: 0;
+  
+
+
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 10vh);
+    grid-template-columns: 100%;
+    
+    padding: 0;
+    box-sizing: border-box;
+
 
   }
 .profile-Picture{
-    width: 100px;
+    grid-row: 1/ 3;
+    grid-column: 1 / 1;
     height: 100px;
     border-radius: 50%;
-    margin: 50px auto 20px 75px;
+    justify-self: center;
+    align-self: end;
     
 }
 
 .name{
-    text-align: center;
+    grid-row: 3/ 4;
+    grid-column: 1 / 1;
+    justify-self: center;
+    align-self: end;
+
+}
+
+.service-history{
+    grid-row: 4/ 5;
+    grid-column: 1 / 1;
+    justify-self: center;
+    margin-bottom: 10%;
+}
+
+.line{
+    grid-row: 4/ 5;
+    grid-column: 1 / 1;
+    justify-self: center;
+    margin: 10%;
 }
 nav a{
     color: white;
@@ -57,8 +82,10 @@ hr.solid{
 }
 
 .side-bar-links {
-    display: flex;
-    align-items: center;
+    grid-row: 4/ 9;
+    grid-column: 1 / 1;
+    margin-top: 10%;
+
     
   }
 .icon{
@@ -66,37 +93,42 @@ hr.solid{
     height: 20px;
 }
 .side-bar li{
-    list-style-type: none;
+    list-style-type:none;
     margin-bottom: 20px;
 }
 
 main {
-    position: fixed;
     height: 99.9%;
     width:87%;
     margin-left: 13%;
-    left: 0;
+  
+
+  }
+.dashboard{
     display: grid;
-    grid-template-rows: repeat(5, minmax(150px, 1fr));
+    grid-template-rows: repeat(5, 17.35vh);
     grid-template-columns: repeat(6, minmax(150px, 1fr)) ;
     gap: 1rem;
     padding: 1rem;
-    
+    box-sizing: border-box;
 
-    
-  }
+}
 
-  .upcoming-event-containe {
+main  a{
+    color: black;
+}
+main a:hover{
+    color: grey;
+}
 
-  }
-  .upcoming-event > h1 {
+  .upcoming-event  h1 {
     color: black;
     text-align: left;
     font-size: x-large;
     margin-left: 10px;
 }
 
-.upcoming-event > h4 {
+.upcoming-event  h4 {
     color: black;
     text-align: left;
     margin-left: 10px;
@@ -113,9 +145,8 @@ hr.u-event {
     height: 25px;
     background-color: #ccc;
     border-radius: 50%;
-    opacity: 1;
-    left: 1.5%;
-    top: 12%;
+    left: 0.5%;
+    top: 35%;
     position: absolute;
 }
 
@@ -126,7 +157,7 @@ hr.u-event {
     margin-top: -12px;
 }
 
-.upcoming-event > .event-inv {
+.upcoming-event  .event-inv {
     color: black;
     text-align: left;
     margin-left: 12px;
@@ -135,14 +166,14 @@ hr.u-event {
 }
 
 
-.my-events > h1 {
+.my-events  h1 {
     color: black;
     text-align: left;
     font-size: x-large;
     margin-left: 10px;
 }
 
-.my-events > h4 {
+.my-events  h4 {
     color: black;
     text-align: left;
     margin-left: 10px;
@@ -239,6 +270,7 @@ hr.event-invitation {
     overflow: auto;
     background-color: #f8f8f8;
     border:  solid black;
+    position: relative;
   }
 
   .my-events {
@@ -265,8 +297,209 @@ hr.event-invitation {
     overflow: auto;
     background-color: #f8f8f8;
     border-radius: 7%;
-    height: 200%;
+    width: 200%;
 
 
     border:  solid black;
+} 
+
+.profile{
+    display: grid;
+    grid-template-rows: repeat(11, 8.7vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
+
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+
+    border-radius: 4%;
+
+}
+
+#profile-line {
+    border-top: 1.5px solid black;
+    width: 96%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.profile-name{
+    grid-row: 1/ 2;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+    z-index: 1;
+
+}
+
+.education{
+    grid-row: 2/ 3;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+}
+
+.second-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.education-box{
+    grid-row: 3/ 4;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    margin-left: 25px;
+}
+
+.major{
+    grid-row: 2 / 3;
+    grid-column: 5 / 9;
+    background-color: #f8f8f8;
+}
+
+.major-box{
+    grid-row: 3/ 4;
+    grid-column: 5 / 9;
+    background-color: #f8f8f8;
+    
+}
+
+.contact{
+    grid-row: 4/ 5;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.contact-box{
+    grid-row: 5/ 6;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.about-me{
+    grid-row: 6/ 7;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.about-me-box{
+    grid-row: 7/ 9;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    
+}
+
+.skills{
+    grid-row: 9/ 10;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.skills-box{
+    grid-row: 10/ 12;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    
+}
+
+.button{
+    grid-row: 11/ 12;
+    grid-column: 7 / 8;
+    justify-self: unset;
+    align-self: stretch;
+}
+
+button{
+    border-radius: 10%;
+    background-color: #01563F;
+    color: white;
+    width: 60%;
+    height: 100%;
+}
+
+.page{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 6.8vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 4%;
+    gap: 0.25rem;
+}
+
+.page-name{
+    grid-row: 1/ 3;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+
+
+}
+
+.search-bar{
+    grid-row: 1/ 3;
+    grid-column: 6 / 9;
+    background-color: #f8f8f8;
+    align-self: center;
+
+
+
+}
+.search-bar input{
+    width: 50%;
+    margin-left: 10%;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.search-button{
+    width: 35px;
+    padding-bottom: 1%;
+}
+
+#notif-date {
+
+    text-align: right;
+    margin-top: -3%;
+    margin-right: 2%;
+}
+
+#inbox-line2 {
+    border-top: 1.5px solid black;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#coord-profile4 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 30px;
+    
+}
+
+.notif-description {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.event-inbox{
+    grid-row: auto;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+    border: solid black;
+    overflow:hidden;
+    display: grid;
+    grid-template-rows: repeat(5, 6.8vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
 } 
