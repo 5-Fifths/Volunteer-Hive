@@ -503,3 +503,77 @@ button{
     grid-template-rows: repeat(5, 6.8vh);
     grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
 } 
+
+.event-title{
+    grid-row: 1/ 2;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+
+
+}
+
+.coordinator-name{
+    grid-row: 2/ 3;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-info{
+    grid-row: 3/ 6;
+    grid-column: 1 / 6;
+    background-color: #f8f8f8;
+}
+
+.inbox-info{
+    grid-row: 3/ 6;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-img{
+        grid-row: 2/ 6;
+        grid-column: 6 / 8;
+        background-color: #f8f8f8;
+        justify-self: center;
+    
+}
+
+.event-img img{
+    height: 90%;
+}
+
+.event-info2{
+    grid-row: 5/ 6;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-info3{
+    grid-row: 2/ 2;
+    grid-column: 3 / 3;
+    background-color: #f8f8f8;
+}
+
+.event-info4{
+    grid-row: 3/ 6;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-info5{
+    grid-row: 3/ 6;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+}
+
+.coordinator-name2{
+    grid-row: 2/ 2;
+    grid-column: 1 / 1;
+    background-color: #f8f8f8;
+}
+
+.event-info6{
+    grid-row: 4/ 11;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+}
