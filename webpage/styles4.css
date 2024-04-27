@@ -588,3 +588,68 @@ button{
     z-index: 1;
     align-self: end;
 }
+
+div{
+    
+}
+
+/* -----------------COORDINATOR STYLES----------------------- */
+.event-calendar {
+    grid-row: 3/ 6;
+    grid-column: 3 / 7;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+} 
+
+.event-calendar > h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.event-calendar > h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+hr.event-calendar {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.volunteer-name{
+    text-align: center;
+    margin-top: -1.5%;
+    margin-right: 2%;
+
+}
+
+.event-info4{
+    grid-row: 2/ 2;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+    align-self: end;
+}
+
+.button-deny{
+    grid-row: 10/ 12;
+    grid-column: 8/ 9;
+
+}
+
+.button-approve{
+    grid-row: 10/ 12;
+    grid-column: 7 / 8;
+
+}
+
+.button-deny button{
+    background-color: rgba(196, 7, 7, 0.986);
+}
