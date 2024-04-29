@@ -9,11 +9,18 @@
 <body>
     <div class="form">
         <h1>Registration Form</h1>
-        <form action = "/register" method="POST">
+        <form action="/register" method="POST">
             <input type="email" name="username" class="input-field" placeholder="Username"/>
-            <input type="password" name = "password" class = "input-field" placeholder="Password"/>
-            <input type="submit" class = "btn" value="REGISTER"/>
-       </form>
+            <input type="password" name="password" class="input-field" placeholder="Password"/>
+            <select name="role" class="select-field">
+                <option value="">(Select One)</option>
+                <option value="1">Administrator</option>
+                <option value="2">Coordinator</option>
+                <option value="3">Volunteer</option>
+            </select>
+            <input type="submit" class="btn" value="REGISTER"/>
+        </form>
     </div>
 </body>
 </html>
+
