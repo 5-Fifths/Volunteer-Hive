@@ -707,3 +707,28 @@ hr.event-calendar {
     justify-self: unset;
     align-self: stretch;
 }
+
+.dropdown{
+    grid-row: 2/ 2;
+    grid-column: 2 / 4;
+    align-self:center;
+
+}
+
+select{
+    width: 100%;
+    padding: 2%;
+}
+
+.notification-box{
+    grid-row: 3/ 3;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+}
+
+.notification-button-coordinator{
+    grid-row: 9/ 10;
+    grid-column: 6 / 7;
+    justify-self: unset;
+    align-self: stretch;
+}
