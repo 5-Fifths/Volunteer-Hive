@@ -2,11 +2,12 @@
 // Hashes input string (password) and INSERTs to database
 
 // Modules
-const bcrypt = require("./hash.js");
+const { createHash } = require("./hash.js");
+const con = require("./database.js");
+require("dotenv/config");
 
 // Initialization
 const ROOT_DIR = process.env.ROOT_DIR;
-const hasher = bcrypt();
 
 // GET method
 // Return correct page
@@ -49,23 +50,16 @@ function attemptLogin(username, password) {
         console.error(TypeError);
     }
 
-    hash = hasher.createHash(password);
+    const hash = createHash(password);
 
-    con.query("SELECT EXISTS(SELECT * FROM login WHERE username = ? AND password = ?)", [username, hash], (error, results, fields) => {
-        if (error) {
-            console.error(error);
-            return;
-        }
-    });
-
-    con.query("INSERT INTO login (username, password) values (?, ?)", [username, hash], function(error, results, fields) {
+    con.query("SELECT 1 FROM login WHERE EXISTS(SELECT * FROM login WHERE username = ? AND password = ?)", [username, hash], (error, results, fields) => {
         if (error) {
             console.error(error);
             res.redirect("/login");
             return;
         }
 
-        if (results.affectedRows > 0) {
+        if (results.length > 0) {
             res.redirect("/"); // Send to dashboard
         } 
         else {

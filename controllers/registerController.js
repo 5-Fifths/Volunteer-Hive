@@ -2,11 +2,12 @@
 // Hashes input string (password) and INSERTs to database
 
 // Modules
-const bcrypt = require("./hash.js");
+const { createHash } = require("./hash.js");
+const con = require("./database.js");
+require("dotenv/config");
 
 // Initialization
 const ROOT_DIR = process.env.ROOT_DIR;
-const hasher = bcrypt();
 
 // GET method
 // Return correct page
@@ -16,12 +17,15 @@ const getPage = (req, res) => {
 
 // POST method
 // Register a new user
-const registerUser = (res, req) => {
+const registerUser = (req, res) => {
     try {
+        const fname = req.body.fname;
+        const lname = req.body.lname;
         const username = req.body.username;
         const password = req.body.password;
+        const acc_type = req.body.dropdown;
 
-        attemptRegister(username, password);
+        attemptRegister(fname, lname, username, password, acc_type);
 
         res.redirect("/login");
     }
@@ -31,7 +35,7 @@ const registerUser = (res, req) => {
     }
 };
 
-function attemptRegister(username, password) {
+function attemptRegister(fname, lname, username, password, acc_type) {
     try {
         validateUsername(username);
     }
@@ -40,30 +44,25 @@ function attemptRegister(username, password) {
         return;
     }
 
-    hash = hasher.createHash(password);
+    const hash = createHash(password);
 
-    con.query("INSERT INTO login (username, password) values (?, ?)", [username, hash], function(error, results, fields) {
+    con.query("INSERT INTO login (fname, lname, username, password, acc_type) values (?, ?, ?, ?, ?)", [fname, lname, username, hash, acc_type], function(error, results, fields) {
         if (error) {
             console.error(error);
             return;
         }
 
-        if (results.affectedRows > 0) {
-            res.redirect("/login");
-        } 
-        else {
+        if (results.affectedRows <= 0) {
             res.redirect("/");
             throw new Error("User registration failed.");
         }
-
-        res.end();
     });
 }
 
 // Ensure that there is not already an entry
 function validateUsername(username) {
     if (typeof username != "string") {
-        throw TypeError("Input is not a string.");
+        throw new TypeError("Input is not a string.");
     }
 
     con.query("SELECT username FROM login WHERE username = ?", [username], (error, results, fields) => {

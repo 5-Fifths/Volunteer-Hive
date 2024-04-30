@@ -3,7 +3,6 @@
 
 // Modules
 express = require("express");
-mysql = require("mysql2");
 require("dotenv/config");
 
 // Local modules
@@ -32,17 +31,4 @@ app.listen(PORT, (error) => {
     }
 
     console.log("\nServer running on port %d\n", PORT);
-});
-
-// User connects to website
-const con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "!Sacramento1!",
-    database: "volunteer_hive"
-});
-
-con.connect(function(error){
-    if (error) throw error
-    else console.log("Connected to the database!")
 });
