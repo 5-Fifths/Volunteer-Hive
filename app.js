@@ -17,6 +17,7 @@ const PORT = process.env.PORT;
 
 // Middleware
 app.use(express.json());
+app.use(express.static("webpage"));
 
 // Routing
 app.use("/register", registerRoute);
