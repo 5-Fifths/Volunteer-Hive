@@ -33,83 +33,68 @@
             </ul>
           </div>
         </nav> 
-      
-          <div class="upcoming-event">
-            <img class="profile-pic" id="coord-profile" src="https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png"> <p id="coord-name">Dpt. Chair</p>
+        
+        <main class="dashboard">
+
+          <div class="upcoming-event" ><a href="Event(Coordinator).html">
+            <h1>Upcoming Events</h1>
             <hr class="u-event">
-            <h3>CSE. Dept Career Fair</h3>
+            <h4>ECS Dpt. Career Fair</h4>
+            <div><img id="coord-profile4" src="../../assets/blank-profile-picture.png"> Dpt. Chair</div>
             <p class="event-inv">Dear Students, we invite you to join us at our upcoming Computer Science Symposium, 
               a dynamic gathering designed to ignite your passion for technology and innovation. Immerse yourself in a day filled with 
               captivating talks, engaging workshops, and insightful discussions led by industry experts and esteemed academics. Explore the latest trends and advancements in artificial intelligence, cybersecurity, data science, and more, 
               gaining invaluable knowledge and practical skills that will empower you in your academic and professional pursuits.Don't miss this opportunity to network with industry leaders, learn from the best, and chart a course towards a successful and fulfilling career in Computer Science. 
               See you there!</p>
-              
-          </div>
 
+            </a></div>
 
-          <div class="attendance">
-            <h1>Attendance</h1>
-            <hr class="attend-line" id="h41">
-
-            <div id="clock-container">
-
+        <div class="attendance">
+          <h1>Attendance</h1>
+          <hr class="attend-line" id="h41">
+          <div id="clock-container">
             <div class="clock-in">
-                <h4 class="clock" id="clocked-in">Clocked In</h4>
-                <hr class="clock-line1">
-
-                <div class="time-in"><p>12:00pm</p></div>
-
-                    </div>
-        
-
+              <h4 class="clock" id="clocked-in">Clocked In</h4>
+              <hr class="clock-line1">
+              <div class="time-in"><p>12:00pm</p></div>
+            </div>
             <div class="clock-in">
                 <h4 class="clock" id="clocked-out">Clocked Out</h4>
                 <hr class="clock-line2">
-
                 <div class="time-out"><p>1:00pm</p></div>
-                    </div>
-
-
+            </div>
+          </div>
+          <div id="total-hours">
+            <h4 class="totalh" id="totalh">Total Hours</h4>
+            <hr class="totalh-line">
+            <div class="total-in"><p>1:00pm</p></div>
+          </div>
         </div>
 
-        <div id="total-hours">
-          <h4 class="totalh" id="totalh">Total Hours</h4>
-          <hr class="totalh-line">
-
-          <div class="total-in"><p>1:00pm</p></div>
+        <div class="performance">
+          <h1 class="perform" id="performance-title">Performance</h1>
+          <hr class="perform-line">
+            <div class="rating">
+              <div class="stars">
+                <input type="radio" name="rating1" id="rating1">
+                <label for="rating1" class="fa fa-star"></label>
+                <input type="radio" name="rating2" id="rating2">
+                <label for="rating2" class="fa fa-star"></label>
+                <input type="radio" name="rating3" id="rating3">
+                <label for="rating3" class="fa fa-star"></label>
+                <input type="radio" name="rating4" id="rating4">
+                <label for="rating4" class="fa fa-star"></label>
+                <input type="radio" name="rating5" id="rating5">
+                <label for="rating5" class="fa fa-star"></label>
+                <hr class="perform-after-line">
+                  <div class="tasks-met">
+                    <h5>Tasks met:</h5>
+                    <ul>
+                      <li>Task 1</li>
+                      <li>Task 2</li>
+                      <li>Task 3</li>
+                    </ul>
                   </div>
-
-            
-          </div>
-
-            <div class="performance">
-                <h1 class="perform" id="performance-title">Performance</h1>
-                <hr class="perform-line">
-
-                <div class="rating">
-                  <div class="stars">
-                  <input type="radio" name="rating1" id="rating1">
-                  <label for="rating1" class="fa fa-star"></label>
-                  <input type="radio" name="rating2" id="rating2">
-                  <label for="rating2" class="fa fa-star"></label>
-                  <input type="radio" name="rating3" id="rating3">
-                  <label for="rating3" class="fa fa-star"></label>
-                  <input type="radio" name="rating4" id="rating4">
-                  <label for="rating4" class="fa fa-star"></label>
-                  <input type="radio" name="rating5" id="rating5">
-                  <label for="rating5" class="fa fa-star"></label>
-
-                  <hr class="perform-after-line">
-
-                <div class="tasks-met">
-                  <h5>Tasks met:</h5>
-                  <ul>
-                    <li>Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li>
-                  </ul>
-                </div>
-
                 <div class="tasks-not-met">
                   <h5>Tasks not met:</h5>
                   <ul>
@@ -117,31 +102,11 @@
                     <li>Task 5</li>
                   </ul>
                 </div>
-                </div>
-
-                
-
-
-                </div>
-  
-
+              </div>
             </div>
-
-            
-          
+        </div>
 
 
-
-
-
-
-
-          </div>
-
-
-
-           </div>
-       
-
+      </main>
     </body>
 </html>
