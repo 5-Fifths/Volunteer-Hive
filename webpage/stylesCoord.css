@@ -1,0 +1,248 @@
+
+
+.upcoming-event {
+    height: 250px;
+    width: 1100px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 4%;
+    left: 115%;
+}
+
+.upcoming-event > h3 {
+    color: black;
+    text-align: left;
+    font-size: large;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+
+hr.u-event {
+    border-top: 3px solid black;
+    width: 95%;
+    margin-top: 0px;
+}
+
+#coord-profile {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -6%;
+    top: -12%;
+    position: absolute;
+}
+
+#coord-name {
+    color: black;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 22px;
+    font-size: large;
+    margin-bottom: 10px;;
+}
+
+.upcoming-event > .event-inv {
+    color: black;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 14px;
+
+}
+
+
+.attendance {
+    height: 450px;
+    width: 320px;
+    background-color: #f8f8f8;
+    position: absolute;
+    bottom: 5%;
+    left: 150%;
+    border-radius: 7%;
+}
+
+.attendance > h1 {
+    color: black;
+    text-align: center;
+    font-size: large;
+    
+    
+}
+
+#clock-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#clocked-in{
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#clocked-out{
+    color: black;
+    text-align: right;
+    margin-right: 10px;
+}
+
+hr.attend-line {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+hr.clock-line1, .clock-line2 {
+    margin-bottom: 20px;
+    border-top: 1.5px solid black;
+    width: 92%;
+}
+
+.clock-line1 {
+    margin-left: 7px;
+    margin-bottom: 0px;
+}
+
+.clock-line2 {
+    margin-right: 5px;
+}
+
+.clock {
+    margin-bottom: 5px;
+}
+
+.time-in {
+    width: 92px;
+    height: 42px;
+    background-color: #D9D9D9;
+    margin-left: 8px;
+}
+
+.time-in > p, .time-out > p {
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding-top: 10px;
+}
+
+.time-out {
+    width: 92px;
+    height: 42px;
+    background-color: #D9D9D9;
+    margin-right: 8px;
+}
+
+#total-hours > h4 {
+    text-align: center;
+
+}
+
+hr.totalh-line {
+    margin-bottom: 10px;
+    border-top: 1.5px solid black;
+    width: 55%;
+}
+
+.total-in  {
+    width: 92px;
+    height: 42px;
+    background-color: #D9D9D9;
+    margin-left: 115px;
+}
+
+.total-in > p {
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding-top: 10px;
+}
+
+.performance {
+    height: 450px;
+    width: 320px;
+    background-color: #f8f8f8;
+    position: absolute;
+    bottom: 5%;
+    left: 320%;
+    border-radius: 7%;
+}
+
+.performance > h1 {
+    color: black;
+    text-align: center;
+    font-size: large;
+    
+    
+}
+
+hr.perform-line {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.rating {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.stars label {
+    color: #eded2b;
+    font-size: xx-large;
+    font-weight: 850;
+    padding: 12px;
+}
+
+
+.rating  input {
+    display: none;
+}
+
+.rating  input + label {
+    text-shadow: 1px 1px 0 #eded2b;
+    cursor: pointer;
+}
+
+.rating  input:checked + label ~ label {
+    color: #838383;
+}
+
+.rating  label:active {
+    transform: scale(0.8);
+    transition: 0.3 ease;
+}
+
+hr.perform-after-line {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.tasks-not-met {
+    
+    margin-left: 190px;
+    margin-top: -123px;
+    width: 100px;
+    height: 100px;
+   
+}
+
+.tasks-met {
+    
+    width: 100px;
+    height: 100px;
+   
+}
+
+
+
+
+h5 {
+    font-size: larger;
+}
