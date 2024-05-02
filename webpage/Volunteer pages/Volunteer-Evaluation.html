@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style-eval.css" />
+    <link rel="stylesheet" href="../style-eval.css" />
   </head>
+  <title>Volunteer Hive</title>
   <body>
     <div class="eval-container">
       <header class="header">
         <h1 id="title" class="eval-center">Evaluation Form</h1>
         <p id="description" class="description eval-center">
-          Please fill out the form to tell us about the volunteer
+          Please fill out the form to tell us about the Event
         </p>
       </header>
 
@@ -32,7 +33,7 @@
         </div>
 
         <div class="form-container">
-          <p>Which option best describes the volunteer's work?</p>
+          <p>Which option best describes how the Event was operated</p>
           <select id="dropdown" name="work" class="form-eval" required>
             <option disabled selected value>Select rating</option>
             <option value="Great">Great</option>
@@ -44,7 +45,7 @@
         </div>
 
         <div class="form-container">
-          <p>Would you let this volunteer be in an event again?</p>
+          <p>Would you be a volunteer in this event again?</p>
           <label>
             <input
               name="user-recommend"
@@ -71,19 +72,6 @@
               class="input-radio"
             />Not sure</label
           >
-        </div>
-
-        <div class="form-container">
-          <p>How much did the volunteer complete?</p>
-          <select id="most-like" name="mostLike" class="form-eval" required>
-            <option disabled selected value>Select number of tasks out of 5</option>
-            <option value="0">0</option>
-            <option value="1">1 task out of 5</option>
-            <option value="2">2 tasks out of 5</option>
-            <option value="3">3 tasks out of 5</option>
-            <option value="4">4 tasks out of 5</option>
-            <option value="5">5 tasks out of 5</option>
-          </select>
         </div>
 
         <div class="form-container">
