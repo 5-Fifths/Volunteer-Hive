@@ -18,30 +18,39 @@ const getPage = (req, res) => {
 // POST method
 // Register a new user
 const registerUser = (req, res) => {
-    try {
-        const fname = req.body.fname;
-        const lname = req.body.lname;
-        const username = req.body.username;
-        const password = req.body.password;
-        const acc_type = req.body.dropdown;
+    const fname = req.body.fname;
+    const lname = req.body.lname;
+    const username = req.body.username;
+    const password = req.body.password;
+    const acc_type = req.body.dropdown;
 
-        attemptRegister(fname, lname, username, password, acc_type);
-
+    if (attemptRegister(fname, lname, username, password, acc_type) == 0) {
         res.redirect("/login");
     }
-    catch (e) {
-        console.error(e);
-        res.redirect("/");
+    else {
+        // TODO: Output notification that registration has failed
+        res.redirect("/register");
     }
 };
 
+// Return 0 for success, 1 for error
 function attemptRegister(fname, lname, username, password, acc_type) {
-    try {
-        validateUsername(username);
+    // Input validation
+    let validInput = typeValidation({acc_type}, "number") && typeValidation({fname, lname, username, password}, "string");
+
+    if (validInput == 1) {
+        return 1;
     }
-    catch (TypeError) {
-        console.error(TypeError);
-        return;
+
+    // Ensure that user doesn't already exist in the database
+    let query = con.query("SELECT username FROM login WHERE username = ?", [username], (error, results, fields) => {
+        if (results.length > 0) {
+            console.error("User already exists.");
+        }
+    });
+
+    if (query.values != null) {
+        return 1;
     }
 
     const hash = createHash(password);
@@ -49,27 +58,26 @@ function attemptRegister(fname, lname, username, password, acc_type) {
     con.query("INSERT INTO login (fname, lname, username, password, acc_type) values (?, ?, ?, ?, ?)", [fname, lname, username, hash, acc_type], function(error, results, fields) {
         if (error) {
             console.error(error);
-            return;
+            return 1;
         }
 
         if (results.affectedRows <= 0) {
-            res.redirect("/");
-            throw new Error("User registration failed.");
+            console.error("User registration failed.");
+            return - 1;
         }
     });
+
+    return 0;
 }
 
-// Ensure that there is not already an entry
-function validateUsername(username) {
-    if (typeof username != "string") {
-        throw new TypeError("Input is not a string.");
+function typeValidation(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] != target) {
+            return 1;
+        }
     }
 
-    con.query("SELECT username FROM login WHERE username = ?", [username], (error, results, fields) => {
-        if (results.length > 0) {
-            throw new Error("User already exists.");
-        }
-    });
+    return 0;
 }
 
 module.exports = {

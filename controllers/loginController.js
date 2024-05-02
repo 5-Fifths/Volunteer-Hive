@@ -16,38 +16,27 @@ const getPage = (req, res) => {
 };
 
 // POST method
-// Login an existing user
+// Log in an existing user
 const authenticateUser = (req, res) => {
-    try {
-        const username = req.body.username;
-        const password = req.body.password;
+    const username = req.body.username;
+    const password = req.body.password;
 
-        try {
-            validateUsername(username);
-            validateString(password);
-        } 
-        catch (e) {
-            console.error(e);
-            return;
-        }
-
-        attemptLogin(username, password);
-        res.redirect("/"); // send to dashboard?
-    }
-    catch (e) {
-        console.error(e);
+    if (attemptLogin(username, password) == 0) {
+        // Authentication success
+        req.session.username = username;
+        
         res.redirect("/");
-        return;
+    } 
+    else {
+        // TODO: Output notification about wrong username and/or password
+        res.redirect("/login");
     }
 };
 
 // Ensure that user exists and login can happen
 function attemptLogin(username, password) {
-    try {
-        validateUsername(username);
-    }
-    catch (TypeError) {
-        console.error(TypeError);
+    if (typeValidation({username, password}, "string") == 1) {
+        return 1;
     }
 
     const hash = createHash(password);
@@ -55,42 +44,28 @@ function attemptLogin(username, password) {
     con.query("SELECT 1 FROM login WHERE EXISTS(SELECT * FROM login WHERE username = ? AND password = ?)", [username, hash], (error, results, fields) => {
         if (error) {
             console.error(error);
-            res.redirect("/login");
-            return;
+            return 1;
         }
 
         if (results.length > 0) {
-            res.redirect("/"); // Send to dashboard
+            return 0;
         } 
         else {
-            res.redirect("/");
-            throw new Error("User authentication failed.");
+            // Username : Password pair don't exist in the database
+            console.error("User authentication failed.");
+            return 1;
         }
-
-        res.end();
     });
 }
 
-function validateString(string) {
-    if (typeof string != "string") {
-        throw TypeError("Input is not a string.");
+function typeValidation(arr, target) {
+    for (let i = 0; i < arr.length; i++) {
+        if (typeof arr[i] != target) {
+            return 1;
+        }
     }
-}
 
-// Ensure that there is not already an entry
-function validateUsername(username) {
-    validateString(username);
-
-    con.query("SELECT username FROM login WHERE username = ?", [username], (error, results, fields) => {
-        if (error) {
-            console.error(error);
-            return;
-        }
-
-        if (results.length <= 0) {
-            throw new Error("User doesn't exist.");
-        }
-    });
+    return 0;
 }
 
 module.exports = {
