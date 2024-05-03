@@ -332,8 +332,8 @@
   .events .event:hover::after {
     display: flex;
   }
-  .add-event {
-    position: absolute;
+  
+  .add-event{
     bottom: 30px;
     right: 30px;
     width: 40px;
@@ -349,6 +349,7 @@
     background-color: transparent;
     cursor: pointer;
   }
+
   .add-event:hover {
     opacity: 1;
   }
@@ -444,7 +445,7 @@
     padding: 20px;
   }
   .add-event-footer .add-event-btn {
-    height: 40px;
+   
     font-size: 1rem;
     font-weight: 500;
     outline: none;
