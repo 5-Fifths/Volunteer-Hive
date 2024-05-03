@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Hive</title>
+  <style>
+    @media screen and (max-width: 500px) {
+      form {
+          float: none;
+          width: 100%;
+      }
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    form {
+        border: 10px solid white;
+        margin: 50px 350px 50px 350px;
+        padding: 10px 30px 10px 30px;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 50px 0 50px 0;
+        padding: 0px 120px 0px 120px;
+        height: 100%;
+        background-image: url("https://localwiki.org/media/cache/d8/4c/d84c349297afd100089349892401f5da.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    label{
+        color: black;
+    }
+    
+    img {
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #username {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    #password {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    #first-name{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    #last-name{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    
+    ::placeholder {
+        font-size: medium;
+        padding-top: 1px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: green;
+    }
+    
+    #title {
+        text-align: center;
+        color: black;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px 20px;
+        margin-top: 25px;
+        display: inline-block;
+        background-color: green;
+        border-radius: 20px;
+        color: white;
+        font-size: 16px;
+    }
+    
+    #sign-acc{
+        font-size: 15px;
+        float: right;
+    }
+    
+    
+    label {
+        float: left;
+        font-size: 15px;
+    }
+    
+    span {
+        float: right;
+        font-size: 15px;
+    }
+    
+    #reg{
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    
+    #dropdown {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+    
+    #sign-up{
+        color: white;
+    }
+    
+    #sign-in{
+        color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="form">
+    <main id="main-doc">
+      <form action="/Register" method="POST" id="register-form">
+        <div class="logo">
+          <img src="https://www.sacramento365.com/wp-content/uploads/sites/www.sacramento365.com/images/2018/05/venue-featured-Christina-Chavez-1525385083.png">
+        </div>
+        
+        <h1>Volunteer Hive</h1>
+        
+        <div class="register-in">
+          <h1 id="title">Register</h1>
+  
+          <select id="dropdown" name="role" required>
+            <option value="">(select one)</option>
+            <option value="1">Administrator</option>
+            <option value="2">Coordinator</option>
+            <option value="3">Volunteer</option>
+          </select>
+  
+          <input name="fname" id="first-name" type="text" placeholder="Enter first name" required>
+          <input name="lname" id="last-name" type="text" placeholder="Enter last name" required>
+          <input name="username" id="username" type="email" placeholder="Email or Username" required>
+          <input name="password" id="password" type="password" placeholder="Password" required>
+  
+          <label id="sign-acc">
+            Have an account? Sign in <a href="/Login">here</a>
+          </label>
+  
+          <button id="reg" type="submit">Register</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
+
+

@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      *{
+    box-sizing: border-box;
+}
+:root {
+    --sac-state-green: #01563F;
+}
+a{
+    text-decoration: none;
+}
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter';
+    
+
+  }
+
+.side-bar{
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    background-color: var(--sac-state-green);
+    background-image: url("../assets/sac-state-logo.png");
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+    background-position: center;
+    color: white;
+  
+
+
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 10vh);
+    grid-template-columns: 100%;
+    
+    padding: 0;
+    box-sizing: border-box;
+
+
+  }
+.profile-Picture{
+    grid-row: 1/ 3;
+    grid-column: 1 / 1;
+    height: 100px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: end;
+    
+}
+
+.name{
+    grid-row: 3/ 4;
+    grid-column: 1 / 1;
+    justify-self: center;
+    align-self: end;
+
+}
+
+.service-history{
+    grid-row: 4/ 5;
+    grid-column: 1 / 1;
+    justify-self: center;
+    margin-bottom: 10%;
+}
+
+.line{
+    grid-row: 4/ 5;
+    grid-column: 1 / 1;
+    justify-self: center;
+    margin: 10%;
+}
+nav a{
+    color: white;
+}
+
+hr.solid{
+    border-top: 2px solid white;
+    width: 180px;
+}
+
+.side-bar-links {
+    grid-row: 4/ 9;
+    grid-column: 1 / 1;
+    margin-top: 10%;
+
+    
+  }
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.side-bar li{
+    list-style-type:none;
+    margin-bottom: 20px;
+}
+
+main {
+    height: 99.9%;
+    width:87%;
+    margin-left: 13%;
+  
+
+  }
+.dashboard{
+    display: grid;
+    grid-template-rows: repeat(5, 17.35vh);
+    grid-template-columns: repeat(6, minmax(150px, 1fr)) ;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+
+main  a{
+    color: black;
+}
+main a:hover{
+    color: grey;
+}
+
+  .upcoming-event  h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.upcoming-event  h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+hr.u-event {
+    border-top: 3px solid black;
+    width: 95%;
+}
+
+#coord-profile {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    left: 0.5%;
+    top: 35%;
+    position: absolute;
+}
+
+#coord-name {
+    color: black;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -12px;
+}
+
+.upcoming-event  .event-inv {
+    color: black;
+    text-align: left;
+    margin-left: 12px;
+    margin-top: 14px;
+
+}
+
+
+.my-events  h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.my-events  h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+hr.my-event {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+#h41 {
+    margin-bottom: 20px;
+}
+
+.date-time {
+    color: black;
+    text-align: right;
+    margin-top: -35px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#coord-profile1 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -20%;
+    top: 15%;
+    position: absolute;
+}
+
+#coord-profile2 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -20%;
+    top: 38%;
+    position: absolute;
+}
+
+#coord-profile3 {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    opacity: 1;
+    left: -20%;
+    top: 61%;
+    position: absolute;
+}
+
+
+.event-invitations > h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.event-invitations > h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+hr.event-invitation {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+
+.lassen-p{
+    
+    position: absolute;
+    top: 45%;
+    bottom: 5%;
+    left: 450%;
+    text-align: left;
+
+}
+  .upcoming-event {
+    grid-row: 1 / 3;
+    grid-column: 1 / 7;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border:  solid black;
+    position: relative;
+  }
+
+  .my-events {
+    grid-row: 3/ 6;
+    grid-column: 1 / 3;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.event-invitations {
+    grid-row: 3/ 6;
+    grid-column: 3 / 5;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.lassen-hall{
+    grid-row: 3/ 6;
+    grid-column: 5 / 7;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    width: 200%;
+
+
+    border:  solid black;
+} 
+
+.profile{
+    display: grid;
+    grid-template-rows: repeat(11, 8.7vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
+
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+
+    border-radius: 4%;
+
+}
+
+#profile-line {
+    border-top: 1.5px solid black;
+    width: 96%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-left: 20px;
+}
+
+.profile-name{
+    grid-row: 1/ 2;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+    z-index: 1;
+
+}
+
+.education{
+    grid-row: 2/ 3;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+}
+
+.second-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.education-box{
+    grid-row: 3/ 4;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+}
+
+textarea {
+    margin-left: 25px;
+}
+
+.major{
+    grid-row: 2 / 3;
+    grid-column: 5 / 9;
+    background-color: #f8f8f8;
+}
+
+.major-box{
+    grid-row: 3/ 4;
+    grid-column: 5 / 9;
+    background-color: #f8f8f8;
+    
+}
+
+.contact{
+    grid-row: 4/ 5;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.contact-box{
+    grid-row: 5/ 6;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.about-me{
+    grid-row: 6/ 7;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.about-me-box{
+    grid-row: 7/ 9;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    
+}
+
+.skills{
+    grid-row: 9/ 10;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.skills-box{
+    grid-row: 10/ 12;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    
+}
+
+.button{
+    grid-row: 11/ 12;
+    grid-column: 7 / 8;
+    justify-self: unset;
+    align-self: stretch;
+}
+
+button{
+    border-radius: 10%;
+    background-color: #01563F;
+    color: white;
+    width: 60%;
+    height: 100%;
+}
+
+.page{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 6.8vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border-radius: 4%;
+    gap: 0.25rem;
+}
+
+.page-name{
+    grid-row: 1/ 3;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+
+
+}
+
+.search-bar{
+    grid-row: 1/ 3;
+    grid-column: 6 / 9;
+    background-color: #f8f8f8;
+    align-self: center;
+
+}
+.search-bar input{
+    width: 50%;
+    margin-left: 10%;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.search-button{
+    width: 35px;
+    padding-bottom: 1%;
+
+}
+
+#notif-date {
+
+    text-align: right;
+    margin-top: -3%;
+    margin-right: 2%;
+}
+
+#inbox-line2 {
+    border-top: 1.5px solid black;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#coord-profile4 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 30px;
+    
+}
+
+.notif-description {
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.event-inbox{
+    grid-row: auto;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+    border: solid black;
+    overflow:hidden;
+    display: grid;
+    grid-template-rows: repeat(5, 6.8vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
+} 
+
+.event-title{
+    grid-row: 1/ 2;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+
+
+}
+
+.coordinator-name{
+    grid-row: 2/ 3;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-info{
+    grid-row: 3/ 6;
+    grid-column: 1 / 6;
+    background-color: #f8f8f8;
+}
+
+.inbox-info{
+    grid-row: 3/ 6;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-img{
+        grid-row: 2/ 6;
+        grid-column: 6 / 8;
+        background-color: #f8f8f8;
+        justify-self: center;
+    
+}
+
+.event-img img{
+    height: 90%;
+}
+
+.event-info2{
+    grid-row: 5/ 6;
+    grid-column:8 / 8;
+    background-color: #f8f8f8;
+}
+
+.event-time{
+    grid-row: 2/ 2;
+    grid-column: 3 / 3;
+    background-color: #f8f8f8;
+
+}
+
+.event-leader{
+    grid-row: 3/ 3;
+    grid-column: 1/ 1;
+    background-color: #f8f8f8;
+
+}
+
+.event-status{
+    grid-row: 3/ 3;
+    grid-column: 3 / 3;
+    background-color: #f8f8f8;
+}
+
+.coordinator-name2{
+    grid-row: 2/ 2;
+    grid-column: 1 / 1;
+    background-color: #f8f8f8;
+
+}
+
+.event-info3{
+    grid-row: 4/ 12;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+}
+
+.event-header{
+    grid-row: 1/ 2;
+    grid-column: 1 / 9;
+    background-color: #f8f8f8;
+    z-index: 1;
+    align-self: end;
+}
+
+/* -----------------COORDINATOR STYLES----------------------- */
+.event-calendar {
+    grid-row: 3/ 6;
+    grid-column: 3 / 7;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+} 
+
+.event-calendar > h1 {
+    color: black;
+    text-align: left;
+    font-size: x-large;
+    margin-left: 10px;
+}
+
+.event-calendar > h4 {
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+hr.event-calendar {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 20px;
+}
+
+.volunteer-name{
+    text-align: center;
+    margin-top: -1.5%;
+    margin-right: 2%;
+
+}
+
+.event-info4{
+    grid-row: 2/ 2;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+    align-self: end;
+}
+
+.button-deny{
+    grid-row: 10/ 12;
+    grid-column: 8/ 9;
+
+}
+
+.button-approve{
+    grid-row: 10/ 12;
+    grid-column: 7 / 8;
+
+}
+
+.button-deny button{
+    background-color: rgba(196, 7, 7, 0.986);
+}
+
+.contact-coordinator{
+    grid-row: 2/ 2;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.contact-box-coordinator{
+    grid-row: 3/ 3;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.about-me-coordinator{
+    grid-row: 4/ 4;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.about-me-box-coordinator{
+    grid-row: 5/ 7;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    
+}
+
+.current-event{
+    grid-row: 7/ 7;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    
+}
+
+.current-event-box{
+    grid-row: 8/ 12;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+    border: solid black;
+    overflow:hidden;
+    display: grid;
+    grid-template-rows: repeat(5, 6.8vh);
+    grid-template-columns: repeat(8, minmax(150px, 1fr)) ;
+    
+}
+
+.button-coordinator{
+    grid-row: 11/ 12;
+    grid-column: 8 / 9;
+    justify-self: unset;
+    align-self: stretch;
+}
+
+.dropdown{
+    grid-row: 2/ 2;
+    grid-column: 2 / 4;
+    align-self:center;
+
+}
+
+select{
+    width: 100%;
+    padding: 2%;
+}
+
+.notification-box{
+    grid-row: 3/ 3;
+    grid-column: 1 / 8;
+    background-color: #f8f8f8;
+}
+
+.notification-button-coordinator{
+    grid-row: 9/ 10;
+    grid-column: 6 / 7;
+    justify-self: unset;
+    align-self: stretch;
+}
+
+.event-info-coordinator{
+    grid-row: 5/ 6;
+    grid-column:7 / 7;
+    background-color: #f8f8f8;
+    justify-self: end;
+}
+
+.event-description-coordinator{
+    grid-row: 3/ 6;
+    grid-column: 1 / 5;
+    background-color: #f8f8f8;
+}
+
+.event-img-coordinator{
+    grid-row: 2/ 6;
+    grid-column: 5 / 7;
+    background-color: #f8f8f8;
+    justify-self: center;
+
+}
+
+.event-img-coordinator img{
+    height: 90%;
+}
+
+.inbox-button-coordinator{
+    grid-row: 1/ 3;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.inbox-button-coordinator button{
+    padding: 1%;
+    width: auto;
+}
+
+.event-info-coordinator2{
+    grid-row: 4/ 12;
+    grid-column: 1 / 7;
+    background-color: #f8f8f8;
+}
+
+.edit-event-button{
+    grid-row: 11/ 12;
+    grid-column: 1 / 7;
+    background-color: #f8f8f8;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.edit-event-button button{
+    padding: 1%;
+    width: 200%;
+}
+
+.invite-volunteer-button{
+    grid-row: 11/ 12;
+    grid-column: 7 / 9;
+    background-color: #f8f8f8;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.invite-volunteer-button button{
+    padding: 1%;
+    width: auto;
+}
+
+.co-coordinator-header{
+    grid-row: 2/ 3;
+    grid-column: 7 / 9;
+    background-color: #f8f8f8;
+    z-index: 1;
+   
+}
+
+.co-coordinator-box{
+    grid-row: 4/ 6;
+    grid-column: 7 / 9;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.volunteer-header{
+    grid-row: 6/ 7;
+    grid-column: 7 / 9;
+    background-color: #f8f8f8;
+    z-index: 1;
+   
+}
+
+.volunteer-box{
+    grid-row: 8/ 11;
+    grid-column: 7 / 9;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.event-partipants{
+    grid-row: 6/ 7  ;
+    grid-column: 8 / 9;
+    background-color: #f8f8f8;
+    align-self: end;
+    z-index: 2;
+}
+
+.edit-event-name{
+    grid-row: 2/ 2;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    
+}
+
+.event-name-box{
+    grid-row: 3/ 3;
+    grid-column: 1 / 3;
+    background-color: #f8f8f8;
+    z-index: 1;
+}
+
+.attendance {
+    grid-row: 3/ 6;
+    grid-column: 1 / 3;
+    overflow: auto;
+    background-color: #f8f8f8;
+    border-radius: 7%;
+    border:  solid black;
+}
+
+.attendance > h1 {
+    color: black;
+    text-align: center;
+    font-size: large;
+    
+    
+}
+
+#clocked-in{
+    color: black;
+    text-align: left;
+    margin-left: 10px;
+}
+
+#clocked-out{
+    color: black;
+    text-align: right;
+    margin-right: 10px;
+}
+
+hr.attend-line {
+    border-top: 1.5px solid black;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+hr.clock-line1, .clock-line2 {
+    margin-bottom: 20px;
+    border-top: 1.5px solid black;
+    width: 92%;
+}
+
+.clock-line1 {
+    margin-left: 7px;
+    margin-bottom: 0px;
+}
+
+.clock-line2 {
+    margin-right: 5px;
+}
+
+.clock {
+    margin-bottom: 5px;
+}
+
+.time-in {
+    width: 92px;
+    height: 42px;
+    background-color: #D9D9D9;
+    margin-left: 8px;
+}
+
+.time-in > p, .time-out > p {
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding-top: 10px;
+}
+
+.time-out {
+    width: 92px;
+    height: 42px;
+    background-color: #D9D9D9;
+    margin-right: 8px;
+}
+
+#total-hours > h4 {
+    text-align: center;
+
+}
+
+hr.totalh-line {
+    margin-bottom: 10px;
+    border-top: 1.5px solid black;
+    width: 55%;
+}
+
+.total-in  {
+    width: 92px;
+    height: 42px;
+    background-color: #D9D9D9;
+    margin-left: 115px;
+}
+
+.total-in > p {
+    text-align: center;
+    font-size: large;
+    color: black;
+    padding-top: 10px;
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Volunteer Hive</title>
+    </head>
+    <body>
+      <div class="form">
+        <form action="/VolunteerPerformance-Coordinator" method="POST">
+          <nav class="side-bar">
+            <div class="profile-Picture">
+            <img class = "profile-Picture" src="../../assets/blank-profile-picture.png" alt="Profile Picture">
+            </div>
+            <div class="name">
+              Example Name </br>
+            </div>
+            <div class="service-history">
+                <a href="/ServiceHistory-Coordinator"><u>Event History</u></a>
+            </div>
+            <div class="line">
+            <hr class="solid">
+            </div>
+            <div class="side-bar-links">
+              <ul>
+                <li><a href="/Dashboard-Coordinator"><img class="Icon" src="../../assets/Home Icon.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="/SearchForEvents-Coordinator"><img class="Icon" src="../../assets/Search Icon.png" alt="search-for-events Icon"> Search for Events</a></li>
+                <li><a href=""><img class="Icon" src="../../assets/Calendar Icon.png" alt="Calendar Icon"> Calendar</a></li>
+                <li><a href="/Inbox-Coordinator"><img class="Icon" src="../../assets/Inbox Icon.png" alt="Inbox Icon"> Inbox</a></li>
+                <li><a href="/Profile-Coordinator"><img class="Icon" src="../../assets/Profile Icon.png" alt="Profile Icon"> Profile</a></li>
+              </ul>
+            </div>
+          </nav> 
+          
+          <main class="dashboard">
+  
+            <div class="upcoming-event" ><a href="/Event-Coordinator">
+              <h1>Upcoming Events</h1>
+              <hr class="u-event">
+              <h4>ECS Dpt. Career Fair</h4>
+              <div><img id="coord-profile4" src="../../assets/blank-profile-picture.png"> Dpt. Chair</div>
+              <p class="event-inv">Dear Students, we invite you to join us at our upcoming Computer Science Symposium, 
+                a dynamic gathering designed to ignite your passion for technology and innovation. Immerse yourself in a day filled with 
+                captivating talks, engaging workshops, and insightful discussions led by industry experts and esteemed academics. Explore the latest trends and advancements in artificial intelligence, cybersecurity, data science, and more, 
+                gaining invaluable knowledge and practical skills that will empower you in your academic and professional pursuits.Don't miss this opportunity to network with industry leaders, learn from the best, and chart a course towards a successful and fulfilling career in Computer Science. 
+                See you there!</p>
+  
+              </a></div>
+  
+          <div class="attendance">
+            <h1>Attendance</h1>
+            <hr class="attend-line" id="h41">
+            <div id="clock-container">
+              <div class="clock-in">
+                <h4 class="clock" id="clocked-in">Clocked In</h4>
+                <hr class="clock-line1">
+                <div class="time-in"><p>12:00pm</p></div>
+              </div>
+              <div class="clock-in">
+                  <h4 class="clock" id="clocked-out">Clocked Out</h4>
+                  <hr class="clock-line2">
+                  <div class="time-out"><p>1:00pm</p></div>
+              </div>
+            </div>
+            <div id="total-hours">
+              <h4 class="totalh" id="totalh">Total Hours</h4>
+              <hr class="totalh-line">
+              <div class="total-in"><p>1:00pm</p></div>
+            </div>
+          </div>
+  
+          <div class="performance">
+            <h1 class="perform" id="performance-title">Performance</h1>
+            <hr class="perform-line">
+              <div class="rating">
+                <div class="stars">
+                  <input type="radio" name="rating1" id="rating1">
+                  <label for="rating1" class="fa fa-star"></label>
+                  <input type="radio" name="rating2" id="rating2">
+                  <label for="rating2" class="fa fa-star"></label>
+                  <input type="radio" name="rating3" id="rating3">
+                  <label for="rating3" class="fa fa-star"></label>
+                  <input type="radio" name="rating4" id="rating4">
+                  <label for="rating4" class="fa fa-star"></label>
+                  <input type="radio" name="rating5" id="rating5">
+                  <label for="rating5" class="fa fa-star"></label>
+                  <hr class="perform-after-line">
+                    <div class="tasks-met">
+                      <h5>Tasks met:</h5>
+                      <ul>
+                        <li>Task 1</li>
+                        <li>Task 2</li>
+                        <li>Task 3</li>
+                      </ul>
+                    </div>
+                  <div class="tasks-not-met">
+                    <h5>Tasks not met:</h5>
+                    <ul>
+                      <li>Task 4</li>
+                      <li>Task 5</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+  
+  
+        </main>
+        </form>
+      </div>
+        
+    </body>
+</html>
