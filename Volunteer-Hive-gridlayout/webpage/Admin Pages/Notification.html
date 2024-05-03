@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Volunteer Hive</title>
+    </head>
+    <body>
+        <nav class="side-bar">
+            <div class="profile-Picture">
+              <img class = "profile-Picture" src="../../assets/blank-profile-picture.png" alt="Profile Picture">
+            </div>
+            <div class="name">
+              Example Name </br>
+            </div>
+            <div class="line">
+              <hr class="solid">
+            </div>
+            <div class="side-bar-links">
+              <ul>
+                <li><a href="Dashboard-Admin.html"><img class="Icon" src="../../assets/Home Icon.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="ApproveViewEvents.html"><img class="Icon" src="../../assets/Search Icon.png" alt="search-for-events Icon"> Approve/View Events</a></li>
+                <li><a href=""><img class="Icon" src="../../assets/Calendar Icon.png" alt="Calendar Icon"> Calendar</a></li>
+                <li><a href="Inbox-Admin.html"><img class="Icon" src="../../assets/Inbox Icon.png" alt="Inbox Icon"> Inbox</a></li>
+                
+              </ul>
+            </div>
+          </nav>  
+        <main class="profile">
+            <div class="event-header">
+                <h2>Send a Notification</h2>
+                <hr id="profile-line">
+            </div>
+            <div class="choose-event">
+                <h3 class="second-text" id="me">Choose an Event:</h3>
+            </div>
+            <div class="dropdown">
+                <select name="event-dropdown" id="event-dropdown">
+                    <option value="Event1">Event1</option>
+                    <option value="Event2">Event2</option>
+                </select>
+            </div>
+            <div class="notification-box">
+                <textarea name="about-me" rows="6" cols="120" placeholder="Notification Area"></textarea>
+            </div>
+            <div class="notification-button-coordinator">
+                <a href="Inbox-Admin.html">
+                    <button type="submit" id="save">Send</button>
+                </a>
+            </div>
+        </main>
+    </body>
+</html>
