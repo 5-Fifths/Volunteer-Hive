@@ -2,10 +2,7 @@
     --primary-clr: #01563F;
   }
   * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
   }
   /* nice scroll bar */
   ::-webkit-scrollbar {
@@ -20,111 +17,10 @@
     border-radius: 50px;
   }
   
-  /*side bar */
-  
-  .side-bar{
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    background-color: #01563F;
-  }
-  
-  .profile-pic {
-      width: 100px;
-      height: 100px;
-      background-color: #ccc;
-      border-radius: 50%;
-      margin: 50px auto 20px 75px;
-      opacity: 1;
-  }
-  
-  .icon-container {
-      display: flex;
-      flex-direction: column;
-  }
-  
-  .icon-container > p {
-      text-align: left;
-      margin-top: -18px;
-      margin-left: 70px;
-  }
-  
-  .home-icon{
-      width: 20px;
-      height: 15px;
-      margin: 16px 0px 0px 36px;
-      float: left;
-  }
-  
-  .search-icon {
-      width: 30px;
-      height: 30px;
-      margin: 17px 0px 0px 30px;
-      float: left;
-  
-  }
-  
-  .calendar-icon {
-      width: 20px;
-      height: 20px;
-      margin: 17px 0px 0px 36px;
-      float: left;
-  
-  }
-  
-  .inbox-icon {
-      width: 20px;
-      height: 20px;
-      margin: 17px 0px 0px 36px;
-      float: left;
-  
-  }
-  .profile-icon {
-      width: 20px;
-      height: 20px;
-      margin: 17px 0px 0px 36px;
-      float: left;
-  
-  }
-  
-  p {
-      color: white;
-      text-align: center;
-  }
-  
-  a {
-      color: white;
-  }
-  
-  hr.solid{
-      border-top: 2px solid white;
-      width: 165px;
-      margin-left: 40px;
-      
-  }
-  
-  #se-events{
-      margin-left: 70px;
-      margin-top: -25px;
-  }
-  
-  p > a {
-      text-decoration: none;
-    }
-  
-  .service-history {
-      text-decoration: underline;
-    }
-  
   /*Calendar code*/
   
   
-  .calendar-box {
-    position: relative;
-    left: 25%;
-    top: 0%;
-    bottom: 0%;
-  }
+
   
   
   body {
@@ -646,3 +542,124 @@
     text-decoration: underline;
   }
   
+  /* --------------------------------------------------- */
+
+  
+  .side-bar{
+    height: 100%;
+    width: 13%;
+    position: fixed;
+    background-color: var(--primary-clr);
+    background-image: url("../assets/sac-state-logo.png");
+    background-repeat: no-repeat;
+    background-blend-mode:hard-light;
+    background-position: center;
+    color: white;
+  
+
+
+
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 10vh);
+    grid-template-columns: 100%;
+    
+    padding: 0;
+    box-sizing: border-box;
+
+
+  }
+.profile-Picture{
+    grid-row: 1/ 3;
+    grid-column: 1 / 1;
+    height: 100px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: end;
+    
+}
+
+.name{
+    grid-row: 3/ 4;
+    grid-column: 1 / 1;
+    justify-self: center;
+    align-self: end;
+
+}
+
+.service-history{
+    grid-row: 4/ 5;
+    grid-column: 1 / 1;
+    justify-self: center;
+    margin-bottom: 10%;
+}
+
+.line{
+    grid-row: 4/ 5;
+    grid-column: 1 / 1;
+    justify-self: center;
+    margin: 10%;
+}
+nav a{
+    color: white;
+}
+
+hr.solid{
+    border-top: 2px solid white;
+    width: 180px;
+}
+
+.side-bar-links {
+    grid-row: 4/ 9;
+    grid-column: 1 / 1;
+    margin-top: 10%;
+
+    
+  }
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.side-bar li{
+    list-style-type:none;
+    margin-bottom: 20px;
+}
+
+main {
+    height: 99.9%;
+    width:87%;
+    margin-left: 13%;
+  
+
+  }
+.dashboard{
+    display: grid;
+    grid-template-rows: repeat(5, 17.35vh);
+    grid-template-columns: repeat(6, minmax(150px, 1fr)) ;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+ .calendar-box{
+  grid-row: 1/11  ;
+  grid-column: 1/ 8;
+ }
+
+ body {
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter';
+  
+
+}
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}

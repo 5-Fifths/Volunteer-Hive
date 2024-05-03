@@ -601,7 +601,16 @@ button{
     align-self: end;
 }
 
+.calendar-box{
+    grid-row: 1 / 11;
+    grid-column: 1/ 9;
+}
 
+
+/*------------------------------------------------------*/
+  
+  
+  
 /* -----------------COORDINATOR STYLES----------------------- */
 .event-calendar {
     grid-row: 3/ 6;
