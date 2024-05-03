@@ -59,7 +59,7 @@ img {
     box-sizing: border-box;
 }
 
-#fname{
+#first-name{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -69,7 +69,7 @@ img {
     box-sizing: border-box;
 }
 
-#lname{
+#last-name{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;

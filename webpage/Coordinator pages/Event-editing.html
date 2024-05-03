@@ -18,18 +18,18 @@
               Example Name </br>
             </div>
             <div class="service-history">
-                <a href="ServiceHistory(Coordinator).html"><u>Event History</u></a>
+                <a href="ServiceHistory-Coordinator.html"><u>Event History</u></a>
             </div>
             <div class="line">
               <hr class="solid">
             </div>
             <div class="side-bar-links">
               <ul>
-                <li><a href="Dashboard(Coordinator).html"><img class="Icon" src="../../assets/Home Icon.png" alt="Dashboard Icon"> Dashboard</a></li>
-                <li><a href="SearchForEvents(Coordinator).html"><img class="Icon" src="../../assets/Search Icon.png" alt="search-for-events Icon"> Search for Events</a></li>
+                <li><a href="Dashboard-Coordinator.html"><img class="Icon" src="../../assets/Home Icon.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="SearchForEvents-Coordinator.html"><img class="Icon" src="../../assets/Search Icon.png" alt="search-for-events Icon"> Search for Events</a></li>
                 <li><a href=""><img class="Icon" src="../../assets/Calendar Icon.png" alt="Calendar Icon"> Calendar</a></li>
-                <li><a href="Inbox(Coordinator).html"><img class="Icon" src="../../assets/Inbox Icon.png" alt="Inbox Icon"> Inbox</a></li>
-                <li><a href="Profile(Coordinator).html"><img class="Icon" src="../../assets/Profile Icon.png" alt="Profile Icon"> Profile</a></li>
+                <li><a href="Inbox-Coordinator.html"><img class="Icon" src="../../assets/Inbox Icon.png" alt="Inbox Icon"> Inbox</a></li>
+                <li><a href="Profile-Coordinator.html"><img class="Icon" src="../../assets/Profile Icon.png" alt="Profile Icon"> Profile</a></li>
               </ul>
             </div>
           </nav>  
@@ -44,8 +44,32 @@
             <div class="event-name-box">
                 <textarea name="contacts" rows="1" cols="60" placeholder="Enter Event title"></textarea>
             </div>
+            <div class="location">
+              <h3 class="second-text">Location:</h3>
+            </div>
+            <div class="location-box">
+              <textarea name="contacts" rows="1" cols="60" placeholder="Enter Event Location"></textarea>
+            </div>
+            <div class="time">
+              <h3 class="second-text">Time:</h3>
+            </div>
+            <div class="time-box">
+              <input type="time" min="09:00" max="17:00">
+            </div>
+            <div class="date">
+              <h3 class="second-text">Date:</h3>
+            </div>
+            <div class="date-box">
+              <input type="date" name="event-date" id="event-date">
+            </div>
+            <div class="status">
+              <h3 class="second-text">How many people needed for this event:</h3>
+            </div>
+            <div class="status-box">
+              <input type="number" min="1" max="20" value="1">
+            </div>
             <div class="button">
-                <a href="">
+                <a href="Event-Coordinator.html">
                     <button id="save">Save</button>
                 </a>
             </div>

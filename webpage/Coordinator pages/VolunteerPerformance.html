@@ -18,25 +18,25 @@
             Example Name </br>
           </div>
           <div class="service-history">
-              <a href="ServiceHistory(Coordinator).html"><u>Event History</u></a>
+              <a href="ServiceHistory-Coordinator.html"><u>Event History</u></a>
           </div>
           <div class="line">
           <hr class="solid">
           </div>
           <div class="side-bar-links">
             <ul>
-              <li><a href="Dashboard(Coordinator).html"><img class="Icon" src="../../assets/Home Icon.png" alt="Dashboard Icon"> Dashboard</a></li>
-              <li><a href="SearchForEvents(Coordinator).html"><img class="Icon" src="../../assets/Search Icon.png" alt="search-for-events Icon"> Search for Events</a></li>
+              <li><a href="Dashboard-Coordinator.html"><img class="Icon" src="../../assets/Home Icon.png" alt="Dashboard Icon"> Dashboard</a></li>
+              <li><a href="SearchForEvents-Coordinator.html"><img class="Icon" src="../../assets/Search Icon.png" alt="search-for-events Icon"> Search for Events</a></li>
               <li><a href=""><img class="Icon" src="../../assets/Calendar Icon.png" alt="Calendar Icon"> Calendar</a></li>
-              <li><a href="Inbox(Coordinator).html"><img class="Icon" src="../../assets/Inbox Icon.png" alt="Inbox Icon"> Inbox</a></li>
-              <li><a href="Profile(Coordinator).html"><img class="Icon" src="../../assets/Profile Icon.png" alt="Profile Icon"> Profile</a></li>
+              <li><a href="Inbox-Coordinator.html"><img class="Icon" src="../../assets/Inbox Icon.png" alt="Inbox Icon"> Inbox</a></li>
+              <li><a href="Profile-Coordinator.html"><img class="Icon" src="../../assets/Profile Icon.png" alt="Profile Icon"> Profile</a></li>
             </ul>
           </div>
         </nav> 
         
         <main class="dashboard">
 
-          <div class="upcoming-event" ><a href="Event(Coordinator).html">
+          <div class="upcoming-event" ><a href="Event-Coordinator.html">
             <h1>Upcoming Events</h1>
             <hr class="u-event">
             <h4>ECS Dpt. Career Fair</h4>
@@ -50,60 +50,58 @@
             </a></div>
 
         <div class="attendance">
-          <h1>Attendance</h1>
-          <hr class="attend-line" id="h41">
-          <div id="clock-container">
+          <div class="attendance-title">
+            <h1><u>Attendance</u></h1>
+          </div>
+          <div class="clock-container">
             <div class="clock-in">
-              <h4 class="clock" id="clocked-in">Clocked In</h4>
-              <hr class="clock-line1">
+              <h4 class="clock" id="clocked-in"><u>Clocked In</u></h4>
               <div class="time-in"><p>12:00pm</p></div>
             </div>
-            <div class="clock-in">
-                <h4 class="clock" id="clocked-out">Clocked Out</h4>
-                <hr class="clock-line2">
-                <div class="time-out"><p>1:00pm</p></div>
+            <div class="clock-out">
+                <h4 class="clock" id="clocked-in"><u>Clocked Out</u></h4>
+                <div class="time-in"><p>1:00pm</p></div>
             </div>
           </div>
-          <div id="total-hours">
-            <h4 class="totalh" id="totalh">Total Hours</h4>
-            <hr class="totalh-line">
-            <div class="total-in"><p>1:00pm</p></div>
+          <div class="total-hours">
+            <h4 class="clock" id="clocked-in"><u>Total Hours</u></h4>
+            <div class="time-in"><p>1:00 HR</p></div>
           </div>
         </div>
 
         <div class="performance">
-          <h1 class="perform" id="performance-title">Performance</h1>
-          <hr class="perform-line">
-            <div class="rating">
+          <div class="performance-title">
+            <h1 class="performance-title"><u>Performance</u></h1>
+          </div>
+          <div class="ratings">
               <div class="stars">
-                <input type="radio" name="rating1" id="rating1">
-                <label for="rating1" class="fa fa-star"></label>
-                <input type="radio" name="rating2" id="rating2">
-                <label for="rating2" class="fa fa-star"></label>
-                <input type="radio" name="rating3" id="rating3">
-                <label for="rating3" class="fa fa-star"></label>
-                <input type="radio" name="rating4" id="rating4">
-                <label for="rating4" class="fa fa-star"></label>
-                <input type="radio" name="rating5" id="rating5">
-                <label for="rating5" class="fa fa-star"></label>
-                <hr class="perform-after-line">
-                  <div class="tasks-met">
-                    <h5>Tasks met:</h5>
-                    <ul>
-                      <li>Task 1</li>
-                      <li>Task 2</li>
-                      <li>Task 3</li>
-                    </ul>
-                  </div>
-                <div class="tasks-not-met">
-                  <h5>Tasks not met:</h5>
-                  <ul>
-                    <li>Task 4</li>
-                    <li>Task 5</li>
-                  </ul>
-                </div>
+                <input class="five-stars" type="radio" id="five" name="star" value="five-stars">
+                <label for="five"></label>
+                <input class="four-stars" type="radio" id="four" name="star" value="five-stars">
+                <label for="four"></label>
+                <input class="three-stars" type="radio" id="three" name="star" value="five-stars">
+                <label for="three"></label>
+                <input class="two-stars" type="radio" id="two" name="star" value="five-stars">
+                <label for="two"></label>
+                <input class="one-star" type="radio" id="one" name="star" value="five-stars">
+                <label for="one"></label>
               </div>
-            </div>
+          </div>
+          <div class="tasks-met">
+            <h5>Tasks met:</h5>
+            <ul>
+              <li>Task 1</li>
+              <li>Task 2</li>
+              <li>Task 3</li>
+            </ul>
+          </div>
+          <div class="tasks-not-met">
+            <h5>Tasks not met:</h5>
+            <ul>
+             <li>Task 4</li>
+              <li>Task 5</li>
+            </ul>
+          </div>
         </div>
 
 
